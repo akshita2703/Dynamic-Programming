@@ -1,0 +1,9 @@
+Link - https://www.codingninjas.com/studio/problems/subset-sum-equal-to-k_1550954 (coding Ninja)
+
+Let me clear the concept of subset,subsequence and subarray
+
+subarray - have both order & Continuity
+subsequence-have order but not Continuity
+subset - does not have both order and Continuity
+
+

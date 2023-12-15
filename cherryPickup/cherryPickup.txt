@@ -1,0 +1,58 @@
+Link - https://leetcode.com/problems/cherry-pickup-ii/description/
+
+1463. Cherry Pickup II
+
+DP on Grid (3D dp problem)
+A     B
+2 3 1 2
+3 4 2 2
+5 6 3 5
+
+A- Alice
+B - bob
+
+Path of A - 2+4+6 = 12
+Path of B - 2+2+5 = 9
+
+Total sum = 12+9 = 21
+we have starting point and variable ending (ending at any column in the last row)
+
+(0,0) ----- (0,m-1)
+No uniformity so greedy cannot be apply
+
+(All path by Alice + All path by Bob)
+Recursion should be done together
+
+Rules -
+- Explore everything in terms of (i,j1) & (i,j2)
+- Explore all the path  (i + 1, j - 1), (i + 1, j), or (i + 1, j + 1).
+- Max Sum 
+f(0,0,m-1)
+
+Base case - Destination--
+if(i==n-1){
+    if(j1==j2){
+        return a[i][j1];
+    }
+    else{
+        return a[i][j1] + a[i][j2];
+    }
+
+}
+
+In one move both alice and bob will move
+
+Total combo = 3X3 = 9
+
+column change
+dj[] = {-1,0,+1};
+- Exxplore all the path and return the maximum 
+Recursion 
+T.C- 3^n X 3^n == exponential
+S.C- O(N)
+
+Memoization 
+T.C- O( N x M x M) x 9
+S.C- O( N x M x M)
+
+Declare a 3d vector of dp[r][c][c]

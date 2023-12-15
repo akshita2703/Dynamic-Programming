@@ -1,0 +1,38 @@
+Link - https://leetcode.com/problems/triangle/description/
+
+Description
+
+Given a triangle array, return the minimum path sum from top to bottom.
+
+For each step, you may move to an adjacent number of the row below. More formally, 
+if you are on index i on the current row, you may move to either index i or index i + 1 on the next row.
+
+
+example - 
+        {2},
+        {3, 4},
+        {6, 5, 7},
+        {4, 1, 8, 3}
+
+path ->  2-3-6-4 , 2-4-7-3 , 2-3-5-8 , 2-3-5-1 
+there can be many path we need to find the minimum path sum 
+
+Grid 
+-> Represent everything in (i,j)
+-> explore all the path 
+-> min of all the path 
+
+usually  we start from the back but here we can't do that so we'll start from the start point
+
+f(0,0)
+base case -
+        if(i==n-1){
+            return a[i][j];
+        }
+Main case - 
+        down = (solve)
+        diagonal = (solve)
+      return   min(down,diagonal);
+Recursion time complexity - k =(1+2+3...+n)
+                            2^k
+        space complexity -  O(NxN)
