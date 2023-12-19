@@ -1,0 +1,13 @@
+    arrayyy
+    /     \
+   s1  >= s2
+
+   s1-s2=Diff
+   [5,2,6,4] Diff=3
+   (6+4)-(5+2) =3
+   S1= totalSum - s2
+   totalSum-s2-s2 = Diff
+   totalSum -2s2 = Diff
+   s2 = (totalSum-Diff)/2  this the target (use prev code)
+totalSum-Diff has to be even 
+   if(totSum-d<0||(totSum -d)%2) return false;
