@@ -41,7 +41,7 @@ int main() {
     Solution solution;
     
     // Example usage:
-    std::vector<int> arr = {10, 9, 2, 5, 3, 7, 101, 18};
+    vector<int> arr = {10, 9, 2, 5, 3, 7, 101, 18};
     vector<int> result = solution.longestIncreasingSubsequence(8,arr);
     for(auto it:result){
         cout<< it<<" ";
