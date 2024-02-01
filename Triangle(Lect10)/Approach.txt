@@ -14,7 +14,7 @@ example -
         {6, 5, 7},
         {4, 1, 8, 3}
 
-path ->  2-3-6-4 , 2-4-7-3 , 2-3-5-8 , 2-3-5-1 
+path ->  2-3-6-4 , 2-4-7-3 , 2-3-5-8 , 2-3-5-1 , 2-4-5-1, 2-4-5-8, 2-4-7-8.
 there can be many path we need to find the minimum path sum 
 
 Grid 
